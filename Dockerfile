@@ -15,7 +15,8 @@ COPY . .
 # This is a set of variables that the build script expects
 ENV VERBOSE=0
 ENV PKG=github.com/kubernetes-up-and-running/kuard
-ENV ARCH=amd64
+# If you are using this upon m1/m2/m3 chips 
+ENV ARCH=arm64
 ENV VERSION=test
 
 # When running on Windows 10, you need to clean up the ^Ms in the script
